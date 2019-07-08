@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var array=[];
+      var mayor=0
+      var indice=0
+
+      
+   for(o=0;o<10; o++){
+    numero =window.prompt("Ingrese su cadena de texto :"+(o+1));
+    array[o] = numero;
+    }
+    mayor = array[0];
+    
+    for(o=0;o<10;o++){
+        if(array[o].length>mayor.length){
+            indice=o;
+        }
+        }
+    document.write("segun lo ingresado su cadena mas larga es: "+array[indice]+ " en la posicion "+indice);
+
+
+    
+    
+    </script>
+
+
+</body>
+</html>

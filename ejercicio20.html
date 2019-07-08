@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <script>
+    var a;
+    a=parseInt(prompt("Ingrese el tamaño del vector"));
+
+        var vector = new Array(a);
+
+    for(o=0;o<vector.length;o++){
+
+        var numero=parseInt(prompt("Ingrese un numero en la posicion "+o));
+
+        if(o%2!=0 && numero%2==0){
+
+            document.write("<p>"+"Posicion: "+o+"\t"+" Numero: "+numero+"</p>");
+        }
+    }
+    </script>
+</body>
+</html>

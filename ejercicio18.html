@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var pre,desc,total,tp=0,valortotal=0,descutotal=0;
+
+
+        do{
+            opc=1
+
+            pre=parseFloat(prompt("Ingrese el precio de la prenda"));
+            if(pre>=150000){
+                desc=pre*0.15;
+                total=pre-desc;
+                tp=tp+total;
+                document.write("<p>"+"Precio: "+pre+"\t"+"\t"+"Descuento: 15% = "+desc+"</p>");
+            }
+
+
+            else{  
+                desc=pre*0.08;
+                total=pre-desc;
+                tp=tp+total;
+                document.write("<p>"+"Precio: "+pre+"\t"+"\t"+"Descuento: 8% = "+desc+"<p>");
+            }
+
+
+            valortotal=valortotal+tp;
+            descutotal=descutotal+desc;
+            opc=parseInt(prompt("1 para salir"));
+
+        }while(opc!=1);
+
+        
+        document.write("<p>"+"Descuento total de la compra: "+descutotal+"</p>");
+        document.write("<p>"+"Valor total de la compra: "+valortotal+"</p>");    
+
+
+
+    </script>
+
+</body>
+</html>
